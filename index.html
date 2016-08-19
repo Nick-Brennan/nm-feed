@@ -256,6 +256,7 @@
 <script>
   html2canvas($('#target')[0], {
     onrendered: function(canvas){
+      console.log("h2c fired");
       $('body').append(canvas);
     }
   } );
